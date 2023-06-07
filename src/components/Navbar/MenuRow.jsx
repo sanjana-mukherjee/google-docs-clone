@@ -42,7 +42,7 @@ export default function MenuRow() {
     <Menubar.Root className="flex gap-2">
       {MENU_ITEMS.map(({ label, submenuItems }) => (
         <Menubar.Menu key={label}>
-          <Menubar.Trigger className="select-none rounded-[0.0625rem] px-1 text-sm leading-none outline-none ring-gray-200 hover:bg-gray-200 hover:ring-4 data-[state=open]:bg-gray-200 data-[state=open]:ring-4">
+          <Menubar.Trigger className="select-none rounded-[0.0625rem] px-1 text-sm leading-none text-gray-700 outline-none ring-gray-200 hover:bg-gray-200 hover:ring-4 data-[state=open]:bg-gray-200 data-[state=open]:ring-4">
             {label}
           </Menubar.Trigger>
           <Menubar.Portal>

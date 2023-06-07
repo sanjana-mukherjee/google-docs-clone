@@ -2,8 +2,8 @@ import {
   ClockIcon,
   ChatBubbleBottomCenterTextIcon,
   VideoCameraIcon,
-  ShareIcon,
 } from "@heroicons/react/24/outline";
+import Lock2LineIcon from "remixicon-react/Lock2LineIcon";
 import IconButton from "../../common/IconButton";
 import Tooltip from "../../common/Tooltip";
 
@@ -20,19 +20,20 @@ export default function ProfileRow({ className = "" }) {
         <VideoCameraIcon className="h-6 w-6" />
       </IconButton>
       <Tooltip tooltip="Private only to me">
-        <button className="inline-flex items-center gap-1.5 rounded-full bg-[#c2e7ff] px-4 py-1.5 font-medium hover:shadow-md">
-          <ShareIcon className="h-3 w-3" />
+        <button className="inline-flex items-center gap-2 rounded-full bg-[#c2e7ff] px-5 py-2.5 font-medium tracking-wider text-gray-700 hover:shadow-md">
+          <Lock2LineIcon size={16} className="text-black" />
           <span className="text-sm">Share</span>
         </button>
       </Tooltip>
       <Tooltip
         tooltip={
           <div>
-            <p className="font-[600]">Google Account</p>
-            <p className="text-gray-300">Sanjana Mukherjee</p>
-            <p className="text-gray-300">sanjana2mukherjee@gmail.com</p>
+            <p>Google Account</p>
+            <p className="text-gray-400">Sanjana Mukherjee</p>
+            <p className="text-gray-400">sanjana2mukherjee@gmail.com</p>
           </div>
         }
+        transparentBold
       >
         <img
           className="inline-block h-8 w-8 rounded-full shadow-sm hover:ring-4 hover:ring-gray-200"

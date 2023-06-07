@@ -5,6 +5,7 @@ export default function IconButton({
   tooltip,
   className = "",
   isRounded = true,
+  transparentBold = false,
   ...props
 }) {
   const button = (
@@ -20,5 +21,9 @@ export default function IconButton({
   if (!tooltip) {
     return button;
   }
-  return <Tooltip tooltip={tooltip}>{button}</Tooltip>;
+  return (
+    <Tooltip tooltip={tooltip} transparentBold={transparentBold}>
+      {button}
+    </Tooltip>
+  );
 }

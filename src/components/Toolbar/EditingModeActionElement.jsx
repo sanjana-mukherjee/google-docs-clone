@@ -62,7 +62,7 @@ export default function EditingModeActionElement() {
                     <div className="flex items-start gap-2">
                       <div className="h-5 w-5">{icon}</div>
                       <div className="flex flex-col">
-                        <p className="text-sm font-bold">{label}</p>
+                        <p className="text-sm font-medium">{label}</p>
                         <p className="text-xs text-gray-500">{desc}</p>
                       </div>
                     </div>

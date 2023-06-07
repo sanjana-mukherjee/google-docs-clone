@@ -8,9 +8,9 @@ function App() {
   const [isSidebarVisible, setIsSidebarVisisble] = useState(true);
 
   return (
-    <div className="flex h-[100vh] flex-col overflow-hidden bg-gray-50 p-3 pe-0">
+    <div className="flex h-[100vh] flex-col overflow-hidden bg-gray-50 ps-4 pt-2">
       {isNavbarVisible && (
-        <div className="me-3">
+        <div className="me-4">
           <Navbar />
         </div>
       )}

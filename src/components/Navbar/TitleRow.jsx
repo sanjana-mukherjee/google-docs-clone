@@ -22,15 +22,15 @@ export default function TitleRow({ className = "" }) {
   }, [title]);
 
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
+    <div className={`flex items-center gap-4 ${className}`}>
       <Tooltip tooltip="Rename">
-        <div className="relative">
-          <pre className="invisible inline bg-red-300 px-2 font-[inherit]">{title}</pre>
+        <div className="relative rounded text-lg outline-1 outline-gray-600 hover:outline">
+          <pre className="invisible inline px-2 font-[inherit]">{title}</pre>
           <input
             ref={inputRef}
             value={title}
             onChange={handleTitleChange}
-            className="absolute inset-0 bg-transparent px-2 font-[inherit]"
+            className="absolute inset-0 rounded bg-transparent px-2 text-gray-500"
           />
         </div>
       </Tooltip>

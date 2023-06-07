@@ -22,17 +22,17 @@ export default function Sidebar({ isSidebarVisible, onSidebarVisibilityToggle })
       {isSidebarVisible && (
         <div className="flex flex-col items-center gap-8 p-3">
           {ITEMS.map(({ imgSrc, tooltip }) => (
-            <IconButton key={imgSrc} tooltip={tooltip}>
+            <IconButton key={imgSrc} tooltip={tooltip} transparentBold>
               <img src={imgSrc} className="h-7 w-7 p-1" />
             </IconButton>
           ))}
           <div className="h-0.5 w-full bg-gray-300"></div>
-          <IconButton tooltip="Get Add-ons">
+          <IconButton tooltip="Get Add-ons" transparentBold>
             <PlusIcon className="h-6 w-6" />
           </IconButton>
         </div>
       )}
-      <Tooltip tooltip={isSidebarVisible ? "Hide side panel" : "Show side panel"}>
+      <Tooltip tooltip={isSidebarVisible ? "Hide side panel" : "Show side panel"} transparentBold>
         <button
           onClick={onSidebarVisibilityToggle}
           className={`fixed bottom-3 flex items-center rounded-full p-2.5 transition-all duration-300 ${

@@ -59,7 +59,7 @@ export default function ZoomActionElement() {
           position="popper"
           sideOffset={10}
         >
-          <Select.Viewport className="py-2">
+          <Select.Viewport className="py-2 text-gray-700">
             {OPTIONSGROUP.map((options, index) => (
               <Fragment key={index}>
                 <Select.Group>
@@ -83,7 +83,7 @@ export default function ZoomActionElement() {
 
 const SelectItem = forwardRef(({ value, children }, forwardedRef) => (
   <Select.Item
-    className="select-none rounded-sm px-3 py-1 text-sm outline-none ring-gray-200 data-[disabled]:pointer-events-none data-[highlighted]:bg-gray-200 data-[highlighted]:ring-2"
+    className="my-1 select-none rounded-sm px-4 py-1 text-sm outline-none ring-gray-100 data-[disabled]:pointer-events-none data-[highlighted]:bg-gray-100 data-[highlighted]:ring-2"
     ref={forwardedRef}
     value={value}
   >

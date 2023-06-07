@@ -6,7 +6,7 @@ import Tooltip from "../../common/Tooltip";
 
 export default function Navbar() {
   return (
-    <nav className="mb-3 grid grid-cols-[auto_1fr_auto] items-center gap-2">
+    <nav className="mb-3 grid grid-cols-[auto_1fr_auto] items-center gap-x-2 gap-y-1">
       <Tooltip tooltip="Docs home">
         <img src={docSvg} className="row-start-1 row-end-3 w-8" />
       </Tooltip>

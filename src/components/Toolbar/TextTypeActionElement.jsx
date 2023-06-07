@@ -5,8 +5,8 @@ import Tooltip from "../../common/Tooltip";
 
 const OPTIONS = [
   {
-    label: <span className="text-sm">Normal Text</span>,
-    value: "Normal Text",
+    label: <span className="text-sm">Normal text</span>,
+    value: "Normal text",
     onClick: (editor) => editor.chain().focus().setParagraph().run(),
   },
   {
@@ -20,17 +20,17 @@ const OPTIONS = [
     onClick: (editor) => editor.chain().focus().toggleHeading({ level: 2 }).run(),
   },
   {
-    label: <span className="text-3xl">Heading 1</span>,
+    label: <span className="text-2xl">Heading 1</span>,
     value: "Heading 1",
     onClick: (editor) => editor.chain().focus().toggleHeading({ level: 3 }).run(),
   },
   {
-    label: <span className="text-2xl">Heading 2</span>,
+    label: <span className="text-xl">Heading 2</span>,
     value: "Heading 2",
     onClick: (editor) => editor.chain().focus().toggleHeading({ level: 4 }).run(),
   },
   {
-    label: <span className="text-xl">Heading 3</span>,
+    label: <span className="text-lg text-gray-600">Heading 3</span>,
     value: "Heading 3",
     onClick: (editor) => editor.chain().focus().toggleHeading({ level: 5 }).run(),
   },
@@ -41,7 +41,7 @@ const OPTIONS = [
 ];
 
 export default function TextTypeActionElement({ editor }) {
-  const [value, setValue] = useState("Normal Text");
+  const [value, setValue] = useState("Normal text");
 
   function handleValueChange(value) {
     OPTIONS.find((opt) => opt.value === value).onClick?.(editor);
@@ -83,7 +83,7 @@ export default function TextTypeActionElement({ editor }) {
 
 const SelectItem = forwardRef(({ value, children }, forwardedRef) => (
   <Select.Item
-    className="relative select-none rounded-sm py-4 pe-6 ps-8 outline-none ring-gray-200 data-[disabled]:pointer-events-none data-[highlighted]:bg-gray-200 data-[highlighted]:ring-2"
+    className="relative select-none rounded-sm py-4 pe-6 ps-10 outline-none ring-gray-100 data-[disabled]:pointer-events-none data-[highlighted]:bg-gray-100 data-[highlighted]:ring-2"
     ref={forwardedRef}
     value={value}
   >

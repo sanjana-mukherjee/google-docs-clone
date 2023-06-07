@@ -17,7 +17,7 @@ const ACTION_BUTTONS = [
     onClick: (editor) => editor.chain().focus().redo().run(),
   },
   { icon: <PrinterIcon />, tooltip: "Print (Ctrl + P)", onClick: print },
-  { icon: <CheckBadgeIcon />, tooltip: "Spelling and grammer check" },
+  { icon: <CheckBadgeIcon />, tooltip: "Spelling and grammer check (Ctrl+Alt+X)" },
   { icon: <PaintBrushIcon />, tooltip: "Paint format" },
 ];
 

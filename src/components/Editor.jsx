@@ -60,10 +60,10 @@ export default function Editor({ isNavbarVisible, onNavbarVisibilityToggle }) {
         onNavbarVisibilityToggle={onNavbarVisibilityToggle}
         editor={editor}
       />
-      <div className="scrollbar flex-1 overflow-auto font-['Open_Sans'] [&_h1]:text-4xl [&_h2]:text-xl [&_h2]:text-gray-500 [&_h3]:text-3xl [&_h4]:text-2xl [&_h5]:text-xl">
+      <div className="scrollbar flex-1 overflow-auto pt-4 font-['Open_Sans'] [&_h1]:text-4xl [&_h2]:text-xl [&_h2]:text-gray-500 [&_h3]:mt-5 [&_h3]:text-2xl [&_h4]:mt-5 [&_h4]:text-xl [&_h5]:mt-5 [&_h5]:text-lg [&_h5]:text-gray-600">
         <EditorContent
           editor={editor}
-          className="mx-auto mb-2 w-[900px] border-[1px] border-gray-300 bg-white p-8 [&>*]:min-h-[1000px] [&>*]:outline-none"
+          className="mx-auto mb-3 w-[816px] border-[1px] border-gray-300 bg-white p-8 [&>*]:min-h-[1056px] [&>*]:outline-none"
         />
       </div>
     </>
