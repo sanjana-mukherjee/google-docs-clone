@@ -1,7 +1,7 @@
 import ProfileRow from "./ProfileRow";
 import MenuRow from "./MenuRow";
 import TitleRow from "./TitleRow";
-import docSvg from "../../../public/doc.svg";
+import docSvg from "/doc.svg";
 import Tooltip from "../../common/Tooltip";
 
 export default function Navbar() {

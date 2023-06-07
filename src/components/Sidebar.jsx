@@ -1,8 +1,8 @@
-import calendar from "../../public/calendar.png";
-import contacts from "../../public/contacts.png";
-import keep from "../../public/keep.png";
-import maps from "../../public/maps.png";
-import tasks from "../../public/tasks.png";
+import calendar from "/calendar.png";
+import contacts from "/contacts.png";
+import keep from "/keep.png";
+import maps from "/maps.png";
+import tasks from "/tasks.png";
 import { PlusIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 import IconButton from "../common/IconButton";
